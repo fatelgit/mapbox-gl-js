@@ -28,9 +28,9 @@ export class ImagePosition {
     constructor(paddedRect: Rect, {pixelRatio, version, stretchX, stretchY, content}: StyleImage) {
         this.paddedRect = paddedRect;
         this.pixelRatio = pixelRatio;
-        if (stretchX) this.stretchX = stretchX;
-        if (stretchY) this.stretchY = stretchY;
-        if (content) this.content = content;
+        this.stretchX = stretchX;
+        this.stretchY = stretchY;
+        this.content = content;
         this.version = version;
     }
 
